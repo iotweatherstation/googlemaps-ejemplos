@@ -33,7 +33,7 @@
   <script>
   function initMap() {
 
-    /* El servicio /weather/getAllLastWeather trae todos los idhome con sus respectivos:
+    /* El servicio http://iotserver1.dis.eafit.edu.co/weather/getAllLastWeather trae todos los idhome con sus respectivos:
     latitude, longitude, temp, humid
 
     ej:
@@ -46,7 +46,6 @@
     */
 
     $.get('http://iotserver1.dis.eafit.edu.co/weather/getAllLastWeather', function (marcadores){
-      <!-- RECORRER TODO EL ARREGLO DE MARCADORES Y PINTARLOS EN EL MAPA -->
       var i;
       for (i = 0; i < marcadores.length; i++) {
         var node = document.createElement("p");
